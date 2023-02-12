@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE-edge">
+      <meta name="viewport" content="width-device-width, initial-scale-1.0">
+      <title>Qasim's site</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+   </head>
+
+   <body>
+       <div class="hero-header">
+          <div class="wrapper">
+             <header>
+                 <div class="logo">
+                    <i class="fa-solid fa-"></i>
+                    <div class="logo-text">Qasim</div>
+
+                 </div>
+                 <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                       <li><a href="index.html">Home</a></li>
+                       <li><a href="resume.html">Portfolio</a></li>
+                       <li><a href="resume.html">Resume</a></li>
+                       <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                 </nav>
+             </header>
+             <div class="container">
+                <div class="hero-pic">
+                    <img src="qaso.jpg" alt="profile pic">
+
+                </div>
+                <div class="hero-text">
+                  <h5>Hi I'm <span class="input">Frontend Developer</span></h5>
+                  <h1>Muhammad Qasim</h1><br>
+                  <p>Hi my name is Muhammad Qasim. I am doing Bs-It from Air University
+                     I am also part of developer's club and this is my project
+                  </p><br>
+                  <div class="btn-group">
+                     <a href="cv.html" class="btn">Download CV</a>
+                     <a href="#" class="btn">Hire Me</a>
+                  </div>
+                  <div class="social">
+                     <a href="https://www.facebook.com/Qasim168912?mibextid=LQQJ4d"><i class="fa-brands fa-facebook"></i></a>
+                     <a href="https://twitter.com/urbroqaso/"><i class="fa-brands fa-twitter"></i></a>
+                     <a href="https://instagram.com/m_qas_im?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i></a>
+                     <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                     
+                  </div>
+                </div>
+             </div>
+          </div>
+       </div>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+       <script>
+         var togglebtn=document.querySelector(".togglebtn");
+         var nav=document.querySelector(".navlinks");
+         var links=document.querySelector(".navlinks li");
+
+         togglebtn.addEventlistener("click", function(){
+           this.classlist.toggle("click");
+           nav.classlist.toggle("open");
+
+         })
+
+         var typed=new Typed(".input",{
+            strings:["Frontend Developer","Content Writer","Graphic Designer"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+         })
+       </script>
+   </body>
+
+
+</html>
